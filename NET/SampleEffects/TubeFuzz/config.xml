@@ -1,0 +1,18 @@
+﻿<effect name="TubeFuzz">
+  <param>
+    <name>Distortion_Gain</name>
+    <value>5</value>
+  </param>
+  <param>
+    <name>Amplitude_Attack_Point</name>
+    <value>-0.2</value>
+  </param>
+  <param>
+    <name>Distortion_Clip_Hardness</name>
+    <value>8</value>
+  </param>
+  <param>
+    <name>Mix</name>
+    <value>0.8</value>
+  </param>
+</effect>

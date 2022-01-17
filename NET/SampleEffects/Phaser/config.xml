@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<effect name="Phaser">
+  <param>
+    <name>Dryness</name>
+    <value>1</value>
+  </param>
+  <param>
+    <name>Wetness</name>
+    <value>1</value>
+  </param>
+  <param>
+    <name>Feedback</name>
+    <value>0.2</value>
+  </param>
+  <param>
+    <name>Frequency</name>
+    <value>100</value>
+  </param>
+  <param>
+    <name>SweepRange</name>
+    <value>4</value>
+  </param>
+  <param>
+    <name>SweepRate</name>
+    <value>1</value>
+  </param>
+</effect>

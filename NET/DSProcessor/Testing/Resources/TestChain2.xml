@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><effectChain chainName="TestChain2"><effect name="vibrate2"><param><name>onMS</name><value>0</value></param><param><name>offMS</name><value>0</value></param></effect><effect name="vibrate"><param><name>onMS</name><value>0</value></param><param><name>offMS</name><value>0</value></param></effect></effectChain>

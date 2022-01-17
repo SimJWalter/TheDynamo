@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8EEE5EFF-8AE5-49CB-A866-3EAAA6509875}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DSProcessor</RootNamespace>
+    <AssemblyName>DSProcessor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\build\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contract\ControllerBase.cs" />
+    <Compile Include="DSProcessor\DSProcessorController.cs" />
+    <Compile Include="DSProcessor\DSProcessorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSProcessor\DSProcessorUI.Designer.cs">
+      <DependentUpon>DSProcessorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectBankDesigner\BankSaveUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectBankDesigner\BankSaveUI.Designer.cs">
+      <DependentUpon>BankSaveUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectBankDesigner\BankDetailsListViewItem.cs" />
+    <Compile Include="EffectBankDesigner\BankOpenUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectBankDesigner\BankOpenUI.Designer.cs">
+      <DependentUpon>BankOpenUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectBankDesigner\ChainDetailsUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectBankDesigner\ChainDetailsUI.Designer.cs">
+      <DependentUpon>ChainDetailsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectBankDesigner\EffectBankDesignerController.cs">
+    </Compile>
+    <Compile Include="EffectBankDesigner\EffectBankDesignerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectBankDesigner\EffectBankDesignerUI.Designer.cs">
+      <DependentUpon>EffectBankDesignerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectBankDesigner\ChainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EffectBankDesigner\ChainControl.Designer.cs">
+      <DependentUpon>ChainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectBankDesigner\ChainSelectorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectBankDesigner\ChainSelectorUI.Designer.cs">
+      <DependentUpon>ChainSelectorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectDesigner\ChainDetailsListViewItem.cs" />
+    <Compile Include="EffectDesigner\ChainSaveUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectDesigner\ChainSaveUI.Designer.cs">
+      <DependentUpon>ChainSaveUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectDesigner\ConfigControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EffectDesigner\ConfigControl.Designer.cs">
+      <DependentUpon>ConfigControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectDesigner\ConfigEditorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectDesigner\ConfigEditorUI.Designer.cs">
+      <DependentUpon>ConfigEditorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectDesigner\ChainOpenUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectDesigner\ChainOpenUI.Designer.cs">
+      <DependentUpon>ChainOpenUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectDesigner\EffectDesignerController.cs" />
+    <Compile Include="EffectDesigner\EffectDesignerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectDesigner\EffectDesignerUI.Designer.cs">
+      <DependentUpon>EffectDesignerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectDesigner\EffectControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EffectDesigner\EffectControl.Designer.cs">
+      <DependentUpon>EffectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EffectDesigner\EffectSelectorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EffectDesigner\EffectSelectorUI.Designer.cs">
+      <DependentUpon>EffectSelectorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DSProcessor\DSProcessorUI.resx">
+      <DependentUpon>DSProcessorUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectBankDesigner\BankSaveUI.resx">
+      <DependentUpon>BankSaveUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectBankDesigner\BankOpenUI.resx">
+      <DependentUpon>BankOpenUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectBankDesigner\ChainDetailsUI.resx">
+      <DependentUpon>ChainDetailsUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectBankDesigner\EffectBankDesignerUI.resx">
+      <DependentUpon>EffectBankDesignerUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectBankDesigner\ChainControl.resx">
+      <DependentUpon>ChainControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectDesigner\ChainSaveUI.resx">
+      <DependentUpon>ChainSaveUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectDesigner\ConfigEditorUI.resx">
+      <DependentUpon>ConfigEditorUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectDesigner\ChainOpenUI.resx">
+      <DependentUpon>ChainOpenUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectDesigner\EffectControl.resx">
+      <DependentUpon>EffectControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EffectDesigner\EffectDesignerUI.resx">
+      <DependentUpon>EffectDesignerUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadyState\ReadyStateUI.resx">
+      <DependentUpon>ReadyStateUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReadyState\ReadyStateController.cs" />
+    <Compile Include="ReadyState\ReadyStateUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadyState\ReadyStateUI.Designer.cs">
+      <DependentUpon>ReadyStateUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ViewBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlueWave.Interop\Asio\BlueWave.Interop.Asio.vcproj">
+      <Project>{2A732061-54E2-4242-9F44-1400D7843406}</Project>
+      <Name>BlueWave.Interop.Asio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Designer\Designer.csproj">
+      <Project>{FEF975CA-6CD3-4CD1-9DD9-5C8239066961}</Project>
+      <Name>Designer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Processor\Processor.vcproj">
+      <Project>{D2936193-40F8-4CB1-A1B5-E28F3CB048D8}</Project>
+      <Name>Processor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharpZLib\ICSharpCode.SharpZLib.csproj">
+      <Project>{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}</Project>
+      <Name>ICSharpCode.SharpZLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\bin.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

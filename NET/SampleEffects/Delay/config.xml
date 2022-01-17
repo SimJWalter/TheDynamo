@@ -1,0 +1,15 @@
+﻿<effect name="Delay">
+  <param>
+    <name>decayMS</name>
+    <value>0</value>
+  </param>
+  <param>
+    <name>rate</name>
+    <value>0</value>
+  </param>
+  <param>
+    <name>delay</name>
+    <value>0</value>
+  </param>
+</effect>
+

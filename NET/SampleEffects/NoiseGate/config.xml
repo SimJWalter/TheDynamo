@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<effect name="NoiseGate">
+  <param>
+    <name>Threshold</name>
+    <value>0.0045</value>
+  </param>
+  <param>
+    <name>Decay_Time_Ms</name>
+    <value>20</value>
+  </param>
+  <param>
+    <name>Attack_Point_Ms</name>
+    <value>2</value>
+  </param>
+  <param>
+    <name>Attack_Passthrough_Level</name>
+    <value>0.04</value>
+  </param>
+</effect>

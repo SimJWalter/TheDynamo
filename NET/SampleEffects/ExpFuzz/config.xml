@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<effect name="ExpFuzz">
+  <param>
+    <name>Gain</name>
+    <value>5</value>
+  </param>
+  <param>
+    <name>Mix</name>
+    <value>0.8</value>
+  </param>
+</effect>

@@ -1,0 +1,7 @@
+﻿<effect name="SymClip">
+  <param>
+    <name>Clip_Threshold</name>
+    <value>3</value>
+  </param>
+</effect>
+

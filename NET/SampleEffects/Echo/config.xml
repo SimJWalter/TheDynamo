@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<effect name="Echo">
+  <param>
+    <name>DecayMS</name>
+    <value>1000</value>
+  </param>
+  <param>
+    <name>DelayMS</name>
+    <value>500</value>
+  </param>
+</effect>
